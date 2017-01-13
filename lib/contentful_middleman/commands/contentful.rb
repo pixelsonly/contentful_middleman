@@ -64,7 +64,7 @@ module Middleman
 
       def app
         @app ||= ::Middleman::Application.new do
-          config[:mode] = :contentful
+          config[:mode] = :config
         end
       end
 

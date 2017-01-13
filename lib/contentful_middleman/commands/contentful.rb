@@ -46,7 +46,7 @@ module Middleman
             changes || import_task.changed_local_data?
           end
 
-          Middleman::Cli::Build.new.build if hash_local_data_changed && options[:rebuild]
+          # Middleman::Cli::Build.new.build if hash_local_data_changed && options[:rebuild]
           logger.info 'Contentful Import: Done!'
         else
           raise Thor::Error.new "You need to activate the contentful extension in config.rb before you can import data from Contentful"
